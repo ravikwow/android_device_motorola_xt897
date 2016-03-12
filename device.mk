@@ -16,9 +16,9 @@
 
 $(call inherit-product, device/motorola/msm8960_jbbl-common/msm8960.mk)
 
-LOCAL_PATH := device/motorola/xt897
+LOCAL_PATH := device/motorola/xt907_jbbl
 
-# xt897 specific overlay
+# xt907 specific overlay
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_AAPT_CONFIG := normal
@@ -31,10 +31,6 @@ PRODUCT_COPY_FILES += \
 # NFC
 PRODUCT_PACKAGES += \
     nfc.msm8960
-
-# Alternate optional key maps
-PRODUCT_PACKAGES += \
-    AsantiKeypad
 
 # Unlock for US GSM
 PRODUCT_PACKAGES += \
@@ -55,5 +51,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1
 
 $(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
-$(call inherit-product, vendor/motorola/xt897/xt897-vendor.mk)
+$(call inherit-product, vendor/motorola/xt907_jbbl/xt907_jbbl-vendor.mk)
 

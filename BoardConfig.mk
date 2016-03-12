@@ -24,23 +24,18 @@
 -include device/motorola/msm8960_jbbl-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/motorola/xt897/BoardConfigVendor.mk
+-include vendor/motorola/xt907_jbbl/BoardConfigVendor.mk
 
-LOCAL_PATH := device/motorola/xt897
+LOCAL_PATH := device/motorola/xt907_jbbl
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := xt897,asanti_c
-
-# Vendor Init
-TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/motorola/xt897/init/init_xt897.cpp
+TARGET_OTA_ASSERT_DEVICE := xt907,xt907_jbbl,scorpion_mini
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # Recovery
-TARGET_RECOVERY_DEVICE_DIRS := device/motorola/xt897
+TARGET_RECOVERY_DEVICE_DIRS := device/motorola/xt907_jbbl
 
 # Storage
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1560281088

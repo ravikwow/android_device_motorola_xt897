@@ -16,21 +16,21 @@
 
 #
 # This file is the build configuration for a full Android
-# build for xt897 hardware. This cleanly combines a set of
+# build for xt907 hardware. This cleanly combines a set of
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps). Except for a few implementation
 # details, it only fundamentally contains two inherit-product
-# lines, full and xt897, hence its name.
+# lines, full and xt907, hence its name.
 #
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from xt897 device
-$(call inherit-product, device/motorola/xt897/device.mk)
+# Inherit from xt907 device
+$(call inherit-product, device/motorola/xt907_jbbl/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := xt897
-PRODUCT_NAME := full_xt897
+PRODUCT_DEVICE := xt907_jbbl
+PRODUCT_NAME := full_xt907_jbbl
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := PHOTON Q
+PRODUCT_MODEL := RAZR M
 PRODUCT_MANUFACTURER := motorola

@@ -14,10 +14,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_WIDTH := 540
 TARGET_SCREEN_HEIGHT := 960
 
-PRODUCT_NAME := cm_xt897
-TARGET_VENDOR_PRODUCT_NAME := XT897
-TARGET_VENDOR_DEVICE_NAME := asanti_c
+PRODUCT_NAME := cm_xt907_jbbl
+TARGET_VENDOR_PRODUCT_NAME := XT907
+TARGET_VENDOR_DEVICE_NAME := scorpion_mini
 
 
-$(call inherit-product, device/motorola/xt897/full_xt897.mk)
+$(call inherit-product, device/motorola/xt907_jbbl/full_xt907.mk)
 
